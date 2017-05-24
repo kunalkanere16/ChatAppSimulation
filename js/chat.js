@@ -26,7 +26,7 @@ function startChat(){
 	
 	clearTimeout(linkVar);
 	
-	document.getElementById("message-bubble").innerHTML+='<div id="mary1"><strong class="usernameColor">Mary</strong> : "Hi Nicholas, this is Mary from Abank. Hw may I help you today?"</div>';
+	document.getElementById("message-bubble").innerHTML+='<div id="mary1"><strong class="usernameColor">Mary</strong> : "Hi Nicholas, this is Mary from Abank. How may I help you today?"</div>';
 	
 	document.getElementById("action-message").innerHTML+='<div id="send-action"><input id="message" type="text"> &nbsp;&nbsp;<button class="button" id="send" onclick="sendMessage()">send</button></div>';
 }
