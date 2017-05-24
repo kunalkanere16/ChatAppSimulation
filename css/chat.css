@@ -1,37 +1,124 @@
 .box{
 	color: white;
-	width: 280px;
+	width: 315px;
 	height: auto;
-	min-height:300px;
-	max-height:400px;
+	min-height:260px;
 	margin : auto;
 	background-color: #af3636;
 	border-radius: 5px;
+	display: flex;
+	align-items: baseline;
+    flex-direction: column;
 }
 
 .title{
-	position: absolute;
-    top: 22px;
-    left: 590px;
-    width: 60px;
-    height: 20px;
+	font-size: 25px;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 10px;
+    font-weight: bold;
 }
 
 .bubble{
-	position: absolute;
-	top: 55px;
-	left: 590px;
-	width: 250px;
+	position: relative;
+	top: -45px;
+	min-width: 250px;
+	width: 285px;
 	height: auto;
+	min-height:100px;
 	margin : auto;
 	border: solid;
+	background-color: #ddd8d2;
+	margin-top: 60px;
+	border-radius: 10px;
+}
+.action{
+	/* position: relative;
+	right:195px;
+	top: 250px; */
+	min-width: 100px;
+	color: white;
+	margin-left: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.action{
-	position: absolute;
-	bottom: 55px;
-}
-#href{
+a{
 	color: white;
 	
 }
+#message{
+	width: 188px;
+	margin-left: 20px;
+	height: 20px;
+	/* position: relative;
+    margin-bottom: 20px;
+    top: 10px;
+    left: -150px; */
+}
+
+.button{
+	background-color: #af3636;
+	color: white;
+	position: relative;
+    margin-bottom: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+.tri-right.border.btm-left-in:before {
+	    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 222px;
+    right: auto;
+    top: auto;
+    bottom: -39px;
+    border: 20px solid;
+    border-color: #ffffff transparent transparent #ffffff;
+    border-width: 39px 40px 0 0;
+}
+.tri-right.btm-left-in:after {
+    
+    position: absolute;
+    width: 10px;
+    left: 225px;
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    width: 0;
+    border-style: solid;
+    border-width: 33px 33px 0 0;
+    border-color: #ddd8d2 transparent transparent transparent;
+}
+ 
+ 
+.bubble > div{
+ margin: 10px 10px 10px 10px;
+ color: grey;
+ }
+ 
+ #welcome{
+ color:grey;
+ font-weight: bold;
+ }
+ 
+ .usernameColor {
+ color:black;
+ font-weight: bold;
+ font-size: 20px;
+ }
+ 
+ .highlightText{
+ 	background-color: whitesmoke;
+ 	border-radius: 4px;
+    width: 265px;
+    margin-left: 4px!important;
+    padding: 5px 5px 5px 5px;
+ }
+ 
+ #action-link{
+ 	margin-left: 75px;
+ }

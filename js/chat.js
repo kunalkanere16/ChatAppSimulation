@@ -26,9 +26,9 @@ function startChat(){
 	
 	clearTimeout(linkVar);
 	
-	document.getElementById("message-bubble").innerHTML+='<div id="mary1"><strong>Mary</strong> : "Hi Nicholas, this is Mary from Abank. Hw may I help you today?"</div>';
+	document.getElementById("message-bubble").innerHTML+='<div id="mary1"><strong class="usernameColor">Mary</strong> : "Hi Nicholas, this is Mary from Abank. Hw may I help you today?"</div>';
 	
-	document.getElementById("action-bar").innerHTML+='<div id="send-action"><input id="message" type="text"> &nbsp;&nbsp;<button type="button" id="send" onclick="sendMessage()">Send</button></div>';
+	document.getElementById("action-message").innerHTML+='<div id="send-action"><input id="message" type="text"> &nbsp;&nbsp;<button class="button" id="send" onclick="sendMessage()">send</button></div>';
 }
 
 function sendMessage(){
@@ -41,7 +41,7 @@ function sendMessage(){
 	textEle.value="";
 	
 	//update chat history
-	document.getElementById("message-bubble").innerHTML+='<div id="nic1"><strong>Nicholas</strong> : '+msg+'</div>';
+	document.getElementById("message-bubble").innerHTML+='<div id="nic1" class="highlightText"><strong class="usernameColor">Nicholas</strong> : '+msg+'</div>';
 	
 	//wait 3 secs
 	marryWait = setTimeout(reply, 3000);
@@ -56,5 +56,5 @@ function reply(){
 		' My details menu. Once you have clicked the menu a new page will appear. Select the link "Change password". "'+
 		'From this link it will take you to a screen where you can change you password"';
 	//send reply
-	document.getElementById("message-bubble").innerHTML+='<div id="mary2"><strong>Mary</strong> : '+msg+'</div>';
+	document.getElementById("message-bubble").innerHTML+='<div id="mary2"><strong class="usernameColor">Mary</strong> : '+msg+'</div>';
 }
