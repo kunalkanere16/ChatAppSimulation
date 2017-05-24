@@ -1,0 +1,37 @@
+.box{
+	color: white;
+	width: 280px;
+	height: auto;
+	min-height:300px;
+	max-height:400px;
+	margin : auto;
+	background-color: #af3636;
+	border-radius: 5px;
+}
+
+.title{
+	position: absolute;
+    top: 22px;
+    left: 590px;
+    width: 60px;
+    height: 20px;
+}
+
+.bubble{
+	position: absolute;
+	top: 55px;
+	left: 590px;
+	width: 250px;
+	height: auto;
+	margin : auto;
+	border: solid;
+}
+
+.action{
+	position: absolute;
+	bottom: 55px;
+}
+#href{
+	color: white;
+	
+}
